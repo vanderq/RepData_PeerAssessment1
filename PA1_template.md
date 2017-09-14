@@ -19,7 +19,7 @@ barplot instead of a histogram.
     colnames(stepsPerDay) <- c("Date", "Steps")
     barplot(stepsPerDay$Steps, names.arg=stepsPerDay$Date, xlab="Date", ylab="Steps per day", main="Total number of steps per day")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-2-1.png)
+![](instructions_fig/HistogramStepsPerDay.png)
 
 The mean and the median values:
 
@@ -42,7 +42,7 @@ set.
     colnames(avgStepsPerInterval) <- c("Interval", "Steps")
     plot(avgStepsPerInterval$Interval, avgStepsPerInterval$Steps, type="l", xlab="Interval (starting minute)", ylab="Average number of Steps", main="Average number of steps per interval of 5 minutes across various days" )
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](instructions_fig/AverageStepsPerInterval.png)
 
 The interval with the highest number of average steps over all days is:
 
@@ -77,7 +77,7 @@ The new overview of steps per day:
     colnames(stepsPerDayWithNA) <- c("Date", "Steps")
     barplot(stepsPerDayWithNA$Steps, names.arg=stepsPerDayWithNA$Date, xlab="Date", ylab="Steps per day", main="Total number of steps per day")
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-8-1.png)
+![](instructions_fig//HistogramStepsPerDayWithNA.png)
 
 The mean and the median values:
 
@@ -129,4 +129,4 @@ and create a multi-panel plot
 
     mtext("Comparison between average steps per interval between weekend days and weekdays", side=3, outer=T, cex=1)
 
-![](PA1_template_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+![](instructions_fig/ComparisonWeekendWeekday.png)
